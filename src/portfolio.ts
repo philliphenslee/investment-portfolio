@@ -18,6 +18,11 @@ export class Portfolio implements InvestmentPortfolio {
   securities: InvestmentSecurity[]
 
   constructor(data: InvestmentAccountPosition[]) {
+
+    if (data === undefined || data === null){
+      throw Error("Must provide a valid array of portfolio positions")
+    }
+
     this._accounts = []
     this.initialize(data)
   }

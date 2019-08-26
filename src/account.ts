@@ -23,7 +23,7 @@ export class Account implements InvestmentAccount {
   }
 
   public getGain(): number {
-    return this.getCurrentValue() - this.getCost()
+    return this.getCurrentValue() - this.getCost() 
   }
 
   public get value(): number {

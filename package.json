@@ -1,7 +1,7 @@
 {
-  "name": "project-template",
+  "name": "investment-portfolio",
   "version": "0.0.1",
-  "description": "Modern template for JavaScript and TypeScript projects.",
+  "description": "A JavaScript Investment Portfolio",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
@@ -31,7 +31,7 @@
   "scripts": {
     "lint": "eslint src/* --ext .js,.ts --fix --color",
     "lint:fix": "prettier-eslint  src/* --write",
-    "test": "jest --coverage",
+    "test": "jest --coverage --passWithNoTests",
     "build": "rollup --config"
   },
   "husky": {
@@ -42,7 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/philliphenslee/project-template.git"
+    "url": "git+https://github.com/philliphenslee/invesstment-portfolio.git"
   },
   "keywords": [
     "template",
@@ -52,7 +52,7 @@
   "author": "Phillip Henslee <ph2@ph2.us> (https://github.com/philliphenslee)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/philliphenslee/project-template/issues"
+    "url": "https://github.com/philliphenslee/invesstment-portfolio/issues"
   },
-  "homepage": "https://github.com/philliphenslee/project-template#readme"
+  "homepage": "https://github.com/philliphenslee/invesstment-portfolio#readme"
 }

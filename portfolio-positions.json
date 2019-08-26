@@ -1,0 +1,106 @@
+{
+  "accounts": [
+    {
+      "name": "CH IRA",
+      "positions": [
+        {
+          "symbol": "BND",
+          "shares": 55.392,
+          "cost": 4535.98
+        },
+        {
+          "symbol": "SPAB",
+          "shares": 44.114,
+          "cost": 1272.35
+        },
+        {
+          "symbol": "SPDW",
+          "shares": 39.757,
+          "cost": 1192.57
+        },
+        {
+          "symbol": "SPTM",
+          "shares": 7.033,
+          "cost": 247.59
+        },
+        {
+          "symbol": "VEA",
+          "shares": 151.627,
+          "cost": 5958.05
+        },
+        {
+          "symbol": "VNQ",
+          "shares": 34.313,
+          "cost": 2721.32
+        },
+        {
+          "account": "CH IRA",
+          "symbol": "VTI",
+          "shares": 161.586,
+          "cost": 18795.76
+        },
+        {
+          "account": "CH IRA",
+          "symbol": "VWO",
+          "shares": 81.534,
+          "cost": 3002.97
+        }
+      ]
+    },
+    {
+      "name": "JOINT",
+      "positions": [
+        {
+          "symbol": "MUB",
+          "shares": 87.487,
+          "cost": 9675.76
+        },
+        {
+          "symbol": "SPDW",
+          "shares": 116.213,
+          "cost": 3528.39
+        },
+        {
+          "symbol": "SPEM",
+          "shares": 38.401,
+          "cost": 1343.23
+        },
+        {
+          "symbol": "SPTM",
+          "shares": 60.22,
+          "cost": 2096.98
+        },
+        {
+          "symbol": "VEA",
+          "shares": 80.868,
+          "cost": 3497.04
+        },
+        {
+          "symbol": "VTI",
+          "shares": 108.393,
+          "cost": 14072.35
+        },
+        {
+          "symbol": "VWO",
+          "shares": 41.27,
+          "cost": 1802.5
+        }
+      ]
+    },
+    {
+      "name": "PH IRA",
+      "positions": [
+        {
+          "symbol": "VTI",
+          "shares": 234,
+          "cost": 6788300
+        },
+        {
+          "symbol": "VEA",
+          "shares": 178,
+          "cost": 6788300
+        }
+      ]
+    }
+  ]
+}

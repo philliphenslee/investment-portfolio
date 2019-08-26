@@ -32,3 +32,13 @@ export interface InvestmentPosition {
   cost: number
   value: number
 }
+export interface InvestmentAccountPosition {
+  name: string
+  positions: [
+    {
+      symbol: string
+      shares: number
+      cost: number
+    }
+  ]
+}

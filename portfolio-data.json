@@ -1,0 +1,279 @@
+[
+  {
+    "account": {
+      "name": "CH IRA",
+      "positions": [
+        {
+          "account": "CH IRA",
+          "symbol": "BND",
+          "shares": 55.392,
+          "cost": 4535.98
+        },
+        {
+          "account": "CH IRA",
+          "symbol": "SPAB",
+          "shares": 44.114,
+          "cost": 1272.35
+        },
+        {
+          "account": "CH IRA",
+          "symbol": "SPDW",
+          "shares": 39.757,
+          "cost": 1192.57
+        },
+        {
+          "account": "CH IRA",
+          "symbol": "SPTM",
+          "shares": 7.033,
+          "cost": 247.59
+        },
+        {
+          "account": "CH IRA",
+          "symbol": "VEA",
+          "shares": 151.627,
+          "cost": 5958.05
+        },
+        {
+          "account": "CH IRA",
+          "symbol": "VNQ",
+          "shares": 34.313,
+          "cost": 2721.32
+        },
+        {
+          "account": "CH IRA",
+          "symbol": "VTI",
+          "shares": 161.586,
+          "cost": 18795.76
+        },
+        {
+          "account": "CH IRA",
+          "symbol": "VWO",
+          "shares": 81.534,
+          "cost": 3002.97
+        }
+      ]
+    }
+  },
+  {
+    "account": "JOINT",
+    "symbol": "MUB",
+    "shares": 87.487,
+    "cost": 9675.76
+  },
+  {
+    "account": "JOINT",
+    "symbol": "SPDW",
+    "shares": 116.213,
+    "cost": 3528.39
+  },
+  {
+    "account": "JOINT",
+    "symbol": "SPEM",
+    "shares": 38.401,
+    "cost": 1343.23
+  },
+  {
+    "account": "JOINT",
+    "symbol": "SPTM",
+    "shares": 60.22,
+    "cost": 2096.98
+  },
+  {
+    "account": "JOINT",
+    "symbol": "VEA",
+    "shares": 80.868,
+    "cost": 3497.04
+  },
+  {
+    "account": "JOINT",
+    "symbol": "VTI",
+    "shares": 108.393,
+    "cost": 14072.35
+  },
+  {
+    "account": "JOINT",
+    "symbol": "VWO",
+    "shares": 41.27,
+    "cost": 1802.5
+  },
+  {
+    "account": "JOINTx",
+    "symbol": "IRBO",
+    "shares": 24,
+    "cost": 601.8
+  },
+  {
+    "account": "JOINTx",
+    "symbol": "SPSM",
+    "shares": 39,
+    "cost": 1194.74
+  },
+  {
+    "account": "JOINTx",
+    "symbol": "YOLO",
+    "shares": 56,
+    "cost": 1220.4
+  },
+  {
+    "account": "PH IRA",
+    "symbol": "SPAB",
+    "shares": 9.042,
+    "cost": 260.02
+  },
+  {
+    "account": "PH IRA",
+    "symbol": "SPDW",
+    "shares": 12.233,
+    "cost": 373.36
+  },
+  {
+    "account": "PH IRA",
+    "symbol": "SPEM",
+    "shares": 5.053,
+    "cost": 184
+  },
+  {
+    "account": "PH IRA",
+    "symbol": "SPTM",
+    "shares": 35.168,
+    "cost": 1207.84
+  },
+  {
+    "account": "PH IRA",
+    "symbol": "USRT",
+    "shares": 5.037,
+    "cost": 261.27
+  },
+  {
+    "account": "PH ROTH",
+    "symbol": "BND",
+    "shares": 20.142,
+    "cost": 1670.27
+  },
+  {
+    "account": "PH ROTH",
+    "symbol": "SPTM",
+    "shares": 8.038,
+    "cost": 275.55
+  },
+  {
+    "account": "PH ROTH",
+    "symbol": "USRT",
+    "shares": 1.007,
+    "cost": 49.79
+  },
+  {
+    "account": "PH ROTH",
+    "symbol": "VEA",
+    "shares": 37.401,
+    "cost": 1500.65
+  },
+  {
+    "account": "PH ROTH",
+    "symbol": "VNQ",
+    "shares": 9.083,
+    "cost": 716.7
+  },
+  {
+    "account": "PH ROTH",
+    "symbol": "VTI",
+    "shares": 25.091,
+    "cost": 2048.09
+  },
+  {
+    "account": "PH ROTH",
+    "symbol": "VWO",
+    "shares": 18.119,
+    "cost": 686.13
+  },
+  {
+    "account": "PH SIMPLE",
+    "symbol": "BND",
+    "shares": 59.42,
+    "cost": 4874.79
+  },
+  {
+    "account": "PH SIMPLE",
+    "symbol": "SPAB",
+    "shares": 210.157,
+    "cost": 5973.29
+  },
+  {
+    "account": "PH SIMPLE",
+    "symbol": "SPDW",
+    "shares": 199.804,
+    "cost": 6048.7
+  },
+  {
+    "account": "PH SIMPLE",
+    "symbol": "SPEM",
+    "shares": 69.728,
+    "cost": 2487.08
+  },
+  {
+    "account": "PH SIMPLE",
+    "symbol": "SPTM",
+    "shares": 347.495,
+    "cost": 11867.15
+  },
+  {
+    "account": "PH SIMPLE",
+    "symbol": "USRT",
+    "shares": 48.353,
+    "cost": 2311.89
+  },
+  {
+    "account": "PH SIMPLE",
+    "symbol": "VEA",
+    "shares": 206.212,
+    "cost": 8001.57
+  },
+  {
+    "account": "PH SIMPLE",
+    "symbol": "VNQ",
+    "shares": 54.498,
+    "cost": 4433.55
+  },
+  {
+    "account": "PH SIMPLE",
+    "symbol": "VTI",
+    "shares": 173.629,
+    "cost": 19995.44
+  },
+  {
+    "account": "PH SIMPLE",
+    "symbol": "VWO",
+    "shares": 112.738,
+    "cost": 4147.85
+  },
+  {
+    "account": "PYF 401k",
+    "symbol": "SPAB",
+    "shares": 196.085,
+    "cost": 5561.68
+  },
+  {
+    "account": "PYF 401k",
+    "symbol": "SPDW",
+    "shares": 193.513,
+    "cost": 5803.94
+  },
+  {
+    "account": "PYF 401k",
+    "symbol": "SPEM",
+    "shares": 70.739,
+    "cost": 2557.33
+  },
+  {
+    "account": "PYF 401k",
+    "symbol": "SPTM",
+    "shares": 422.873,
+    "cost": 14667.1
+  },
+  {
+    "account": "PYF 401k",
+    "symbol": "USRT",
+    "shares": 58.39,
+    "cost": 2856.47
+  }
+]

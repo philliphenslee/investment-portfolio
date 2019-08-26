@@ -5,33 +5,21 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { InvestmentAccount, InvestmentPortfolio, InvestmentSecurity } from './types'
+import {
+  InvestmentAccount,
+  InvestmentAccountPosition,
+  InvestmentPortfolio,
+  InvestmentSecurity,
+} from './types'
 
 export class Portfolio implements InvestmentPortfolio {
-  private static instance: Portfolio
-
-  private _accounts: InvestmentAccount[]
+  private readonly _accounts: InvestmentAccount[]
   cost: number
   securities: InvestmentSecurity[]
 
-  static get(): Portfolio {
-    if (!Portfolio.instance) {
-      Portfolio.instance = new Portfolio()
-    }
-
-    return Portfolio.instance
-  }
-
-  constructor() {
+  constructor(data: InvestmentAccountPosition[]) {
     this._accounts = []
-  }
-
-  get value(): number {
-    return 0 // this.value
-  }
-
-  get gain(): number {
-    return this.value - this.cost
+    this.initialize(data)
   }
 
   get accounts(): InvestmentAccount[] {
@@ -41,5 +29,17 @@ export class Portfolio implements InvestmentPortfolio {
   addAccount(account: InvestmentAccount): InvestmentAccount {
     this._accounts.push(account)
     return account
+  }
+
+  get gain(): number {
+    return this.value - this.cost
+  }
+
+  private initialize(data: InvestmentAccountPosition[]) {
+    // TODO Initialize the portfolio instance
+  }
+
+  get value(): number {
+    return 0 // this.value
   }
 }

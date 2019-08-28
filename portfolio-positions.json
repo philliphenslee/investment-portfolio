@@ -88,17 +88,180 @@
       ]
     },
     {
-      "name": "PH IRA",
+      "name": "JOINTx",
       "positions": [
         {
-          "symbol": "VTI",
-          "shares": 234,
-          "cost": 6788300
+          "account": "JOINTx",
+          "symbol": "IRBO",
+          "shares": 24,
+          "cost": 601.8
+        },
+        {
+          "account": "JOINTx",
+          "symbol": "SPSM",
+          "shares": 39,
+          "cost": 1194.74
+        },
+        {
+          "account": "JOINTx",
+          "symbol": "YOLO",
+          "shares": 56,
+          "cost": 1220.4
+        }
+      ]
+    },
+    {
+      "name": "PH-IRA",
+      "positions": [
+        {
+          "symbol": "SPAB",
+          "shares": 9.042,
+          "cost": 260.02
+        },
+        {
+          "symbol": "SPDW",
+          "shares": 12.233,
+          "cost": 373.36
+        },
+        {
+          "symbol": "SPEM",
+          "shares": 5.053,
+          "cost": 184
+        },
+        {
+          "symbol": "SPTM",
+          "shares": 35.168,
+          "cost": 1207.84
+        },
+        {
+          "symbol": "USRT",
+          "shares": 5.037,
+          "cost": 261.27
+        }
+      ]
+    },
+    {
+      "name": "PH ROTH",
+      "positions": [
+        {
+          "symbol": "BND",
+          "shares": 20.142,
+          "cost": 1670.27
+        },
+        {
+          "symbol": "SPTM",
+          "shares": 8.038,
+          "cost": 275.55
+        },
+        {
+          "symbol": "USRT",
+          "shares": 1.007,
+          "cost": 49.79
         },
         {
           "symbol": "VEA",
-          "shares": 178,
-          "cost": 6788300
+          "shares": 37.401,
+          "cost": 1500.65
+        },
+        {
+          "symbol": "VNQ",
+          "shares": 9.083,
+          "cost": 716.7
+        },
+        {
+          "symbol": "VTI",
+          "shares": 25.091,
+          "cost": 2048.09
+        },
+        {
+          "symbol": "VWO",
+          "shares": 18.119,
+          "cost": 686.13
+        }
+      ]
+    },
+    {
+      "name": "PH SIMPLE",
+      "positions": [
+        {
+          "symbol": "BND",
+          "shares": 59.42,
+          "cost": 4874.79
+        },
+        {
+          "symbol": "SPAB",
+          "shares": 210.157,
+          "cost": 5973.29
+        },
+        {
+          "symbol": "SPDW",
+          "shares": 199.804,
+          "cost": 6048.7
+        },
+        {
+          "symbol": "SPEM",
+          "shares": 69.728,
+          "cost": 2487.08
+        },
+        {
+          "symbol": "SPTM",
+          "shares": 347.495,
+          "cost": 11867.15
+        },
+        {
+          "symbol": "USRT",
+          "shares": 48.353,
+          "cost": 2311.89
+        },
+        {
+          "symbol": "VEA",
+          "shares": 206.212,
+          "cost": 8001.57
+        },
+        {
+          "symbol": "VNQ",
+          "shares": 54.498,
+          "cost": 4433.55
+        },
+        {
+          "symbol": "VTI",
+          "shares": 173.629,
+          "cost": 19995.44
+        },
+        {
+          "symbol": "VWO",
+          "shares": 112.738,
+          "cost": 4147.85
+        }
+      ]
+    },
+    {
+      "name": "PYF 401k",
+      "positions": [
+        {
+          "symbol": "SPAB",
+          "shares": 196.085,
+          "cost": 5561.68
+        },
+        {
+          "symbol": "SPDW",
+          "shares": 193.513,
+          "cost": 5803.94
+        },
+        {
+          "symbol": "SPEM",
+          "shares": 70.739,
+          "cost": 2557.33
+        },
+        {
+          "symbol": "SPTM",
+          "shares": 422.873,
+          "cost": 14667.1
+        },
+        {
+          "symbol": "USRT",
+          "shares": 58.39,
+          "cost": 2856.47
         }
       ]
     }

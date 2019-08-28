@@ -7,12 +7,12 @@
 import { InvestmentSecurity } from './types'
 
 export class Security implements InvestmentSecurity {
-  public latestPrice: number
-  public previousClose: number
-  public changeDay: number
-  public changeDayPercent: number
-  public priceHigh: number
-  public priceLow: number
+  latestPrice: number
+  previousClose: number
+  changeDay: number
+  changeDayPercent: number
+  priceHigh: number
+  priceLow: number
 
   constructor(public name: string, public symbol: string) {
     this.changeDay = 0
@@ -23,7 +23,7 @@ export class Security implements InvestmentSecurity {
     this.previousClose = 0
   }
 
-  public update(values: []) {
+  update(values: []) {
     // TODO Updates values from array or JSON
   }
 }

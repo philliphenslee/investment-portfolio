@@ -2,7 +2,7 @@ import cleanup from 'rollup-plugin-cleanup'
 export default {
   input: 'dist/sample-ts.js',
   output: {
-    file: 'dist/bundle/cjs/index.js',
+    file: 'dist/bundle/cjs/index.ts',
     format: 'cjs',
     name: 'main',
     banner:

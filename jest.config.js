@@ -1,7 +1,7 @@
 module.exports = {
   coverageDirectory: 'coverage',
-  moduleDirectories: ['node_modules', 'src'],
-  moduleFileExtensions: ['js', 'json', 'jsx', 'ts'],
+  moduleDirectories: ['node_modules', 'src', '__mocks__'],
+  moduleFileExtensions: ['js', 'json', 'jsx', 'ts', 'tsx'],
   roots: ['<rootDir>'],
   testEnvironment: 'node',
   testPathIgnorePatterns: ['/node_modules/'],

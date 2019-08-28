@@ -27,18 +27,23 @@ export interface InvestmentSecurity {
   priceLow: number
 }
 export interface InvestmentPosition {
-  security: InvestmentSecurity
+  symbol: string
   shares: number
   cost: number
   value: number
 }
-export interface InvestmentAccountPosition {
+
+// TODO This works, but it is confusing
+export interface Accounts {
+  accounts?: (AccountsEntity)[] | null
+}
+export interface AccountsEntity {
   name: string
-  positions: [
-    {
-      symbol: string
-      shares: number
-      cost: number
-    }
-  ]
+  positions?: (PositionsEntity)[] | null
+}
+export interface PositionsEntity {
+  symbol: string
+  shares: number
+  cost: number
+  account?: string | null
 }

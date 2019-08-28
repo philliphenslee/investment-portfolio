@@ -53,7 +53,7 @@ export class Portfolio implements InvestmentPortfolio {
       this.addAccount(a)
     })
 
-    // Add the portfolios securities
+    // Add the portfolio's securities
     const uniqueSecurities = [...new Set(allSymbols)]
     for (const security of uniqueSecurities) {
       this._securities.push(new Security(security, security))

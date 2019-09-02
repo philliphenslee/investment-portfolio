@@ -38,7 +38,7 @@ export class Portfolio implements InvestmentPortfolio {
     return this.value - this.cost
   }
 
-  _initialize(data: Accounts) {
+  private _initialize(data: Accounts) {
     let a: Account, p: Position
     const allSymbols: Array<string> = []
 

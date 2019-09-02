@@ -8,14 +8,14 @@
 import { Account } from './account'
 import { Position } from './position'
 import { Security } from './security'
-import { Accounts, InvestmentPortfolio } from './types'
+import { InvestmentPortfolio } from './types'
 
 export class Portfolio implements InvestmentPortfolio {
   private readonly _accounts: Account[]
   private readonly _securities: Security[]
   cost: number
 
-  constructor(data: object) {
+  constructor(data: InvestmentPortfolio) {
     if (data === undefined || data === null) {
       throw new Error('Must provide a valid array of portfolio data')
     }
@@ -38,7 +38,7 @@ export class Portfolio implements InvestmentPortfolio {
     return this.value - this.cost
   }
 
-  private _initialize(data: Accounts) {
+  private _initialize(data: InvestmentPortfolio) {
     let a: Account, p: Position
     const allSymbols: Array<string> = []
 

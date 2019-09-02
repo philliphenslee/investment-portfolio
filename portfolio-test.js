@@ -1,4 +1,4 @@
-const jsonOutput = require('./portfolio-positions')
+const jsonOutput = require('./portfolio-data')
 
 const data = JSON.parse(JSON.stringify(jsonOutput))
 

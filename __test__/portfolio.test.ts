@@ -6,7 +6,7 @@
  */
 
 import { Portfolio } from '../src'
-import * as data from '../portfolio-positions.json'
+import * as data from '../portfolio-data.json'
 
 describe('Investment Portfolio Test Suite', () => {
   test('The Portfolio should be an instance of portfolio', () => {
@@ -18,7 +18,7 @@ describe('Investment Portfolio Test Suite', () => {
   test('Should throw an error if not passed valid data', () => {
     expect(() => {
       // @ts-ignore
-      const portfolio = new Portfolio()
+      new Portfolio()
     }).toThrowError('Must provide a valid array of portfolio data')
   })
 })

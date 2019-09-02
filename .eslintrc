@@ -30,6 +30,7 @@
         "asyncArrow": "always"
       }
     ],
+    "no-unused-vars": "off",
     "prettier/prettier": 2
   }
 }

@@ -28,6 +28,4 @@ describe('Investment Portfolio Test Suite', () => {
     expect(portfolio).toBeInstanceOf(Portfolio)
     expect(portfolio.accounts.length).toBeGreaterThan(0)
   })
-
-  test('That ')
 })

@@ -17,7 +17,7 @@ export class Portfolio implements InvestmentPortfolio {
 
   constructor(data: object) {
     if (data === undefined || data === null) {
-      throw Error('Must provide a valid array of portfolio positions')
+      throw new Error('Must provide a valid array of portfolio data')
     }
 
     this._accounts = []
@@ -65,6 +65,6 @@ export class Portfolio implements InvestmentPortfolio {
   }
 
   get value(): number {
-    return 0 // this.value
+    return 0
   }
 }

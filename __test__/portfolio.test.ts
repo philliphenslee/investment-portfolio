@@ -5,20 +5,29 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { Portfolio } from '../src'
+import { InvestmentPortfolio, Portfolio } from '../src'
 import * as data from '../portfolio-data.json'
 
 describe('Investment Portfolio Test Suite', () => {
-  test('The Portfolio should be an instance of portfolio', () => {
-    const accounts = JSON.parse(JSON.stringify(data))
-    const portfolio = new Portfolio(accounts) /* ?+ */
-    expect(portfolio).toBeInstanceOf(Portfolio)
+  let portfolioData: InvestmentPortfolio, portfolio
+
+  beforeAll(() => {
+    // Import the portfolio data
+    portfolioData = <InvestmentPortfolio>JSON.parse(JSON.stringify(data))
   })
 
-  test('Should throw an error if not passed valid data', () => {
+  test('That it throws an error if not passed valid argument', () => {
     expect(() => {
       // @ts-ignore
       new Portfolio()
-    }).toThrowError('Must provide a valid array of portfolio data')
+    }).toThrowError('Must provide valid portfolio data')
   })
+
+  test('The Portfolio can be initialized and has accounts', () => {
+    portfolio = new Portfolio(portfolioData)
+    expect(portfolio).toBeInstanceOf(Portfolio)
+    expect(portfolio.accounts.length).toBeGreaterThan(0)
+  })
+
+  test('That ')
 })

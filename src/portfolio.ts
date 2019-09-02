@@ -17,7 +17,7 @@ export class Portfolio implements InvestmentPortfolio {
 
   constructor(data: InvestmentPortfolio) {
     if (data === undefined || data === null) {
-      throw new Error('Must provide a valid array of portfolio data')
+      throw new Error('Must provide valid portfolio data')
     }
 
     this._accounts = []

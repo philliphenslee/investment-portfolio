@@ -5,17 +5,17 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { Accounts, InvestmentPortfolio } from './types'
 import { Account } from './account'
 import { Position } from './position'
 import { Security } from './security'
+import { Accounts, InvestmentPortfolio } from './types'
 
 export class Portfolio implements InvestmentPortfolio {
-  _accounts: Account[]
+  private readonly _accounts: Account[]
+  private readonly _securities: Security[]
   cost: number
-  _securities: Security[]
 
-  constructor(data: Accounts) {
+  constructor(data: object) {
     if (data === undefined || data === null) {
       throw Error('Must provide a valid array of portfolio positions')
     }

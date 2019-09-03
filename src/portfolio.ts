@@ -13,6 +13,7 @@ import { InvestmentPortfolio } from './types'
 export class Portfolio implements InvestmentPortfolio {
   private readonly _accounts: Account[]
   private readonly _securities: Security[]
+  private _value: number
   cost: number
 
   constructor(data: InvestmentPortfolio) {
@@ -22,6 +23,7 @@ export class Portfolio implements InvestmentPortfolio {
 
     this._accounts = []
     this._securities = []
+    this._value = 0
     this._initialize(data)
   }
 
@@ -65,6 +67,7 @@ export class Portfolio implements InvestmentPortfolio {
   }
 
   get value(): number {
+    // TODO Should calculate total portfolio value
     return 0
   }
 }

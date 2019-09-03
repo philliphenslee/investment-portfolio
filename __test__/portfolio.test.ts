@@ -45,9 +45,16 @@ describe('Investment Portfolio Test Suite', () => {
     expect(portfolio.accounts[0]).toBeInstanceOf(Account)
   })
 
-  test('That a account returns a total cost', () => {
+  test('That an account returns a valid total cost', () => {
     const account = portfolio.accounts[0]
     expect(account.totalCost)
+      .toBeNumber()
+      .toBeGreaterThan(0)
+  })
+
+  test('That an individual position returns a valid cost', () => {
+    const position = portfolio.accounts[0].positions[0]
+    expect(position.cost)
       .toBeNumber()
       .toBeGreaterThan(0)
   })

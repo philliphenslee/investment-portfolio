@@ -21,7 +21,7 @@ export class Position implements InvestmentPosition {
     return this._value - this.cost
   }
 
-  _calculateValue(): number {
+  private _calculateValue(): number {
     // TODO Iterate positions and calculate value
     return (this._value = 0)
   }

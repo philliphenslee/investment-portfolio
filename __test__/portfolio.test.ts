@@ -41,7 +41,7 @@ describe('Investment Portfolio Test Suite', () => {
     expect(portfolio.accounts.length).toBeGreaterThan(0)
   })
 
-  test('That it can return an array of valid accounts', () => {
+  test('That portfolio can return an array of valid accounts', () => {
     expect(portfolio.accounts[0]).toBeInstanceOf(Account)
   })
 
@@ -57,5 +57,12 @@ describe('Investment Portfolio Test Suite', () => {
     expect(position.cost)
       .toBeNumber()
       .toBeGreaterThan(0)
+  })
+
+  test('That an individual position returns a valid value', () => {
+    const position = portfolio.accounts[0].positions[0]
+    expect(position.value)
+      .toBeNumber()
+      .toBe(0)
   })
 })

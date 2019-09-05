@@ -34,7 +34,7 @@ export class Account implements InvestmentAccount {
     return this.positions.push(position)
   }
 
-  getHoldings(): InvestmentPosition[] {
+  getPositions(): InvestmentPosition[] {
     return this.positions
   }
 }

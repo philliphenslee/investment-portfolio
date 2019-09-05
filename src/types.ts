@@ -23,6 +23,7 @@ export interface InvestmentPosition {
   symbol: string
   shares: number
   cost: number
+  value: number
 }
 export interface InvestmentSecurity {
   name: string

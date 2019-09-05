@@ -15,16 +15,12 @@ export class Account implements InvestmentAccount {
     this.positions = []
   }
 
-  get currentValue(): number {
-    return 0
-  }
-
   get totalCost(): number {
     return this.positions.reduce((cost, position) => cost + position.cost, 0)
   }
 
   get gain(): number {
-    return this.currentValue - this.totalCost
+    return this.value - this.totalCost
   }
 
   get value(): number {

@@ -9,10 +9,14 @@ import { InvestmentAccount } from './types'
 import { Position } from './position'
 
 export class Account implements InvestmentAccount {
-  positions: Position[]
+  private readonly _positions: Position[]
 
   constructor(public name: string) {
-    this.positions = []
+    this._positions = []
+  }
+
+  get positions(): Position[] {
+    return this._positions
   }
 
   get totalCost(): number {
@@ -24,14 +28,10 @@ export class Account implements InvestmentAccount {
   }
 
   get value(): number {
-    return 0
+    return this.positions.reduce((value, position) => value + position.value, 0)
   }
 
   addPosition(position: Position): number {
     return this.positions.push(position)
-  }
-
-  getPositions(): Position[] {
-    return this.positions
   }
 }

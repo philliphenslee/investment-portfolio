@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { Account, InvestmentPortfolio, Portfolio } from '../src'
+import { Account, InvestmentPortfolio, Portfolio, Position, Security } from '../src'
 import * as data from '../portfolio-data.json'
 
 describe('Investment Portfolio Test Suite', () => {
@@ -42,7 +42,25 @@ describe('Investment Portfolio Test Suite', () => {
   })
 
   test('That portfolio can return an array of valid accounts', () => {
+    expect(portfolio.accounts).toBeArray()
     expect(portfolio.accounts[0]).toBeInstanceOf(Account)
+  })
+
+  test('That portfolio can return an array of securities', () => {
+    expect(portfolio.securities).toBeArray()
+    expect(portfolio.securities[0]).toBeInstanceOf(Security)
+  })
+
+  test('That portfolio can return a value', () => {
+    expect(portfolio.value).toBeNumber()
+  })
+
+  test('That portfolio can return a gain value', () => {
+    expect(portfolio.gain).toBeNumber()
+  })
+
+  test('That Account can return an array of valid positions', () => {
+    expect(portfolio.accounts[0].positions[0]).toBeInstanceOf(Position)
   })
 
   test('That an account returns a valid total cost', () => {
@@ -52,17 +70,34 @@ describe('Investment Portfolio Test Suite', () => {
       .toBeGreaterThan(0)
   })
 
-  test('That an individual position returns a valid cost', () => {
+  test('That an account returns a valid value', () => {
+    const account = portfolio.accounts[0]
+    expect(account.value)
+      .toBeNumber()
+      .toBeGreaterThanOrEqual(0)
+  })
+
+  test('That an account returns a gain value', () => {
+    const account = portfolio.accounts[0]
+    expect(account.gain).toBeNumber()
+  })
+
+  test('That an individual position returns a cost', () => {
     const position = portfolio.accounts[0].positions[0]
     expect(position.cost)
       .toBeNumber()
       .toBeGreaterThan(0)
   })
 
-  test('That an individual position returns a valid value', () => {
+  test('That an individual position returns a value', () => {
     const position = portfolio.accounts[0].positions[0]
     expect(position.value)
       .toBeNumber()
       .toBe(0)
+  })
+
+  test('That an individual position returns a gain value', () => {
+    const position = portfolio.accounts[0].positions[0]
+    expect(position.gain).toBeNumber()
   })
 })

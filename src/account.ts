@@ -5,10 +5,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { InvestmentAccount, InvestmentPosition } from './types'
+import { InvestmentAccount } from './types'
+import { Position } from './position'
 
 export class Account implements InvestmentAccount {
-  positions: InvestmentPosition[]
+  positions: Position[]
 
   constructor(public name: string) {
     this.positions = []
@@ -30,11 +31,11 @@ export class Account implements InvestmentAccount {
     return 0
   }
 
-  addPosition(position: InvestmentPosition): number {
+  addPosition(position: Position): number {
     return this.positions.push(position)
   }
 
-  getPositions(): InvestmentPosition[] {
+  getPositions(): Position[] {
     return this.positions
   }
 }

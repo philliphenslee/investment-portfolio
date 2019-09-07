@@ -71,6 +71,6 @@ export class Portfolio implements InvestmentPortfolio {
   }
 
   get value(): number {
-    return this.accounts.reduce((acc, account) => (acc += account.value), 0)
+    return this.accounts.reduce((acc, account) => acc + account.value, 0)
   }
 }

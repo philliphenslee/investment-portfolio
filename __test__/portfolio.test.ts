@@ -51,6 +51,10 @@ describe('Investment Portfolio Test Suite', () => {
     expect(portfolio.securities[0]).toBeInstanceOf(Security)
   })
 
+  test('That portfolio can return an array of security symbols', () => {
+    expect(portfolio.getSymbols()).toBeArray()
+  })
+
   test('That portfolio can return a value', () => {
     expect(portfolio.value).toBeNumber()
   })

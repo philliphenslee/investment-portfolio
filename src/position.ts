@@ -17,12 +17,11 @@ export class Position implements InvestmentPosition {
     return this._value
   }
 
-  get gain(): number {
-    return this._value - this.cost
+  set value(price) {
+    this._value = this.shares * price
   }
 
-  private _calculateValue(): number {
-    // TODO Iterate positions and calculate value
-    return (this._value = 0)
+  get gain(): number {
+    return this._value - this.cost
   }
 }

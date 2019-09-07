@@ -40,6 +40,10 @@ export class Portfolio implements InvestmentPortfolio {
     return this.value - this.cost
   }
 
+  getSymbols(): string[] {
+    return this.securities.map(security => security.symbol)
+  }
+
   private _initialize(data: InvestmentPortfolio) {
     let a: Account, p: Position
     const allSymbols: Array<string> = []
@@ -67,7 +71,6 @@ export class Portfolio implements InvestmentPortfolio {
   }
 
   get value(): number {
-    // TODO Should calculate total portfolio value
-    return 0
+    return this.accounts.reduce((acc, account) => (acc += account.value), 0)
   }
 }

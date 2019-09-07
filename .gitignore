@@ -5,3 +5,4 @@ node_modules
 .idea
 portfolio-data.json
 api-test.js
+demo.js

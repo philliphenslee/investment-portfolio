@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "description": "A JavaScript Investment Portfolio",
   "main": "src/index.ts",
-  "dependencies": {},
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "node-iex-cloud": "^0.0.4",
+    "rxjs": "^6.5.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
@@ -15,7 +19,12 @@
     "babel": "^6.23.0",
     "eslint": "^6.2.1",
     "eslint-config-prettier": "^6.1.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "husky": "^3.0.4",
     "jest": "^24.9.0",
     "jest-chain": "^1.1.2",
@@ -26,7 +35,6 @@
     "prettier-eslint-cli": "^5.0.0",
     "rollup": "^1.20.1",
     "rollup-plugin-cleanup": "^3.1.1",
-    "standard": "^14.0.2",
     "typescript": "^3.5.3"
   },
   "scripts": {

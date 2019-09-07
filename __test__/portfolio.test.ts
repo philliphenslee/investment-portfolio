@@ -12,7 +12,7 @@ describe('Investment Portfolio Test Suite', () => {
   let portfolioData: InvestmentPortfolio, portfolio: Portfolio
 
   beforeAll(() => {
-    /* Import the portfolio data
+    /* Import the portfolio json data
     {
       "accounts": [
         { "name": "IRA",
@@ -41,7 +41,7 @@ describe('Investment Portfolio Test Suite', () => {
     expect(portfolio.accounts.length).toBeGreaterThan(0)
   })
 
-  test('That portfolio can return an array of valid accounts', () => {
+  test('That portfolio can return an array of accounts', () => {
     expect(portfolio.accounts).toBeArray()
     expect(portfolio.accounts[0]).toBeInstanceOf(Account)
   })
@@ -103,5 +103,13 @@ describe('Investment Portfolio Test Suite', () => {
   test('That an individual position returns a gain value', () => {
     const position = portfolio.accounts[0].positions[0]
     expect(position.gain).toBeNumber()
+  })
+
+  test('That an individual position value property can be set', () => {
+    const position = portfolio.accounts[0].positions[0]
+    position.value = 75.37
+    expect(position.value)
+      .toEqual(75.37 * position.shares)
+      .toBeNumber()
   })
 })

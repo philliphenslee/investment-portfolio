@@ -5,8 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-export * from './account'
-export * from './portfolio'
-export * from './position'
-export * from './security'
+export { Account } from './account'
+export { Portfolio } from './portfolio'
+export { Position } from './position'
+export { Security } from './security'
 export * from './types'

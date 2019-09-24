@@ -55,12 +55,18 @@ getPortfolioData().then(data => {
       })
     })
     console.log(portfolio.value.toFixed(2))
+    console.log(response)
+  }
+
+  const displayValue = () => {
+    console.log(portfolio.value)
   }
 
   // create an observable to poll iex for data
   const poll = of({}).pipe(
     mergeMap(_ => getPrices()),
     tap(updatePrices),
+    tap(displayValue),
     delay(30000),
     repeat()
   )

@@ -1,10 +1,10 @@
 import cleanup from 'rollup-plugin-cleanup'
 export default {
-  input: 'dist/sample-ts.js',
+  input: 'dist/index',
   output: {
-    file: 'dist/bundle/cjs/index.ts',
-    format: 'cjs',
-    name: 'main',
+    file: 'dist/bundle/es/invest.js',
+    format: 'esm',
+    name: 'invest',
     banner:
       '/**\n' +
       ' * Copyright (c) Phillip Henslee. All Rights Reserved.\n' +

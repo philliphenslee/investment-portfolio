@@ -10,6 +10,10 @@ import { Position } from './position'
 import { Security } from './security'
 import { InvestmentPortfolio } from './types'
 
+/**
+ * A Portfolio class
+ * @class Portfolio
+ */
 export class Portfolio implements InvestmentPortfolio {
   private readonly _accounts: Account[]
   private readonly _securities: Security[]

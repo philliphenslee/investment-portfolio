@@ -12,6 +12,12 @@ import { InvestmentPosition } from './types'
 export class Position implements InvestmentPosition {
   _value: number
 
+  /**
+   *
+   * @param symbol
+   * @param shares
+   * @param cost
+   */
   constructor(public symbol: string, public shares: number, public cost: number) {
     this._value = 0
   }

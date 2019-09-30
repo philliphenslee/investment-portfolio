@@ -6,6 +6,9 @@
  */
 import { InvestmentSecurity } from './types'
 
+/**
+ * @class Security
+ */
 export class Security implements InvestmentSecurity {
   latestPrice: number
   previousClose: number

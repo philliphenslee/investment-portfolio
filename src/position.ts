@@ -6,6 +6,9 @@
  */
 import { InvestmentPosition } from './types'
 
+/**
+ * @class Position
+ */
 export class Position implements InvestmentPosition {
   _value: number
 

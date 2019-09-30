@@ -8,6 +8,9 @@
 import { InvestmentAccount } from './types'
 import { Position } from './position'
 
+/**
+ * @class Account
+ */
 export class Account implements InvestmentAccount {
   private readonly _positions: Position[]
 

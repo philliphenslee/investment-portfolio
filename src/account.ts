@@ -5,40 +5,30 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { InvestmentAccount } from './types'
-import { Position } from './position'
+import { InvestmentAccount } from './types';
+import { Position } from './position';
 
 /**
  * @class Account
  */
 export class Account implements InvestmentAccount {
-  private readonly _positions: Position[]
+  positions: Position[];
 
-  /**
-   *
-   * @param name
-   */
-  constructor(public name: string) {
-    this._positions = []
-  }
-
-  get positions(): Position[] {
-    return this._positions
-  }
+  constructor(public name: string) {}
 
   get totalCost(): number {
-    return this._positions.reduce((cost, position) => cost + position.cost, 0)
+    return this.positions.reduce((cost, position) => cost + position.cost, 0);
   }
 
   get gain(): number {
-    return this.value - this.totalCost
+    return this.value - this.totalCost;
   }
 
   get value(): number {
-    return this._positions.reduce((value, position) => value + position.value, 0)
+    return this.positions.reduce((value, position) => value + position.value, 0);
   }
 
   addPosition(position: Position): number {
-    return this._positions.push(position)
+    return this.positions.push(position);
   }
 }

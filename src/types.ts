@@ -6,32 +6,32 @@
  */
 
 export interface InvestmentPortfolio {
-  accounts: InvestmentAccount[]
-  securities?: InvestmentSecurity[]
-  value?: number
-  gain?: number
+  accounts: InvestmentAccount[];
+  securities?: InvestmentSecurity[];
+  value?: number;
+  gain?: number;
 }
 
 export interface InvestmentAccount {
-  name: string
-  positions: InvestmentPosition[]
-  value?: number
-  gain?: number
+  name: string;
+  positions: InvestmentPosition[];
+  value?: number;
+  gain?: number;
 }
 
 export interface InvestmentPosition {
-  symbol: string
-  shares: number
-  cost: number
-  value: number
+  symbol: string;
+  shares: number;
+  cost: number;
+  value: number;
 }
 export interface InvestmentSecurity {
-  name: string
-  symbol: string
-  latestPrice: number
-  previousClose: number
-  changeDay: number
-  changeDayPercent: number
-  priceHigh: number
-  priceLow: number
+  name: string;
+  symbol: string;
+  latestPrice: number;
+  previousClose: number;
+  changeDay: number;
+  changeDayPercent: number;
+  priceHigh: number;
+  priceLow: number;
 }

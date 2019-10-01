@@ -54,8 +54,6 @@ getPortfolioData().then(data => {
         position.value = response[position.symbol].price
       })
     })
-    console.log(portfolio.value.toFixed(2))
-    // console.log(response)
   }
 
   /* const displayValue = () => {
@@ -67,7 +65,6 @@ getPortfolioData().then(data => {
   const poll = of({}).pipe(
     mergeMap(_ => getPrices()),
     tap(updatePrices),
-    // tap(displayValue),
     delay(30000),
     repeat()
   )

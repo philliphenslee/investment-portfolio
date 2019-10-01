@@ -69,9 +69,9 @@ export class Portfolio implements InvestmentPortfolio {
 
     // Add the portfolio's securities
     const uniqueSecurities = [...new Set(allSymbols)];
-    for (const security of uniqueSecurities) {
+    uniqueSecurities.forEach(security => {
       this._securities.push(new Security(security, security));
-    }
+    });
   }
 
   get securities(): Security[] {

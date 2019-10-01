@@ -39,6 +39,7 @@
     ],
     "no-unused-vars": "off",
     "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+    "import/prefer-default-export": "off",
     "prettier/prettier": 2
   }
 }

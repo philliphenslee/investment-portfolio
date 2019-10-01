@@ -15,9 +15,11 @@ import { InvestmentPortfolio } from './types';
  * @class Portfolio
  */
 export class Portfolio implements InvestmentPortfolio {
-  accounts: Account[];
+  private readonly _accounts: Account[];
 
-  securities: Security[];
+  private readonly _securities: Security[];
+
+  private _value: number;
 
   cost: number;
 
@@ -26,11 +28,18 @@ export class Portfolio implements InvestmentPortfolio {
       throw new Error('Must provide valid portfolio data');
     }
 
-    this.initialize(data);
+    this._accounts = [];
+    this._securities = [];
+    this._value = 0;
+    this._initialize(data);
+  }
+
+  get accounts(): Account[] {
+    return this._accounts;
   }
 
   addAccount(account: Account): Account {
-    this.accounts.push(account);
+    this._accounts.push(account);
     return account;
   }
 
@@ -42,7 +51,7 @@ export class Portfolio implements InvestmentPortfolio {
     return this.securities.map(security => security.symbol);
   }
 
-  private initialize(data: InvestmentPortfolio) {
+  private _initialize(data: InvestmentPortfolio) {
     let a: Account;
     let p: Position;
     const allSymbols: Array<string> = [];
@@ -61,8 +70,12 @@ export class Portfolio implements InvestmentPortfolio {
     // Add the portfolio's securities
     const uniqueSecurities = [...new Set(allSymbols)];
     for (const security of uniqueSecurities) {
-      this.securities.push(new Security(security, security));
+      this._securities.push(new Security(security, security));
     }
+  }
+
+  get securities(): Security[] {
+    return this._securities;
   }
 
   get value(): number {

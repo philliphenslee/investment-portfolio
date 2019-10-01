@@ -12,12 +12,22 @@ import { Position } from './position';
  * @class Account
  */
 export class Account implements InvestmentAccount {
-  positions: Position[];
+  private readonly _positions: Position[];
 
-  constructor(public name: string) {}
+  /**
+   *
+   * @param name
+   */
+  constructor(public name: string) {
+    this._positions = [];
+  }
+
+  get positions(): Position[] {
+    return this._positions;
+  }
 
   get totalCost(): number {
-    return this.positions.reduce((cost, position) => cost + position.cost, 0);
+    return this._positions.reduce((cost, position) => cost + position.cost, 0);
   }
 
   get gain(): number {
@@ -25,10 +35,10 @@ export class Account implements InvestmentAccount {
   }
 
   get value(): number {
-    return this.positions.reduce((value, position) => value + position.value, 0);
+    return this._positions.reduce((value, position) => value + position.value, 0);
   }
 
   addPosition(position: Position): number {
-    return this.positions.push(position);
+    return this._positions.push(position);
   }
 }

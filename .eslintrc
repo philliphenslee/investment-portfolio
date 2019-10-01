@@ -12,7 +12,7 @@
     "node": true,
     "jest": true
   },
-  "extends": ["airbnb", "prettier/@typescript-eslint", "prettier"],
+  "extends": ["eslint:recommended", "airbnb", "prettier/@typescript-eslint", "prettier"],
   "plugins": ["prettier"],
   "overrides": [
     {

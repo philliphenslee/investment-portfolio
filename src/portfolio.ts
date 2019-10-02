@@ -23,6 +23,10 @@ export class Portfolio implements InvestmentPortfolio {
 
   cost: number;
 
+  /**
+   *
+   * @param data
+   */
   constructor(data: InvestmentPortfolio) {
     if (data === undefined || data === null) {
       throw new Error('Must provide valid portfolio data');

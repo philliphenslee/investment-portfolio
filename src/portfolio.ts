@@ -55,6 +55,11 @@ export class Portfolio implements InvestmentPortfolio {
     return this.securities.map(security => security.symbol);
   }
 
+  /**
+   * Initialize the portfolio
+   * @param data
+   * @private
+   */
   private _initialize(data: InvestmentPortfolio) {
     let a: Account;
     let p: Position;

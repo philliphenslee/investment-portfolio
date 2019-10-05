@@ -26,6 +26,10 @@ export class Position implements InvestmentPosition {
     return this._value;
   }
 
+  /**
+   *
+   * @param price
+   */
   set value(price) {
     this._value = this.shares * price;
   }

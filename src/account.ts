@@ -38,6 +38,10 @@ export class Account implements InvestmentAccount {
     return this._positions.reduce((value, position) => value + position.value, 0);
   }
 
+  /**
+   *
+   * @param position
+   */
   addPosition(position: Position): number {
     return this._positions.push(position);
   }

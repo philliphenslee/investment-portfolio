@@ -18,7 +18,11 @@ export class Position implements InvestmentPosition {
    * @param shares
    * @param cost
    */
-  constructor(public symbol: string, public shares: number, public cost: number) {
+  constructor(
+    public symbol: string,
+    public shares: number,
+    public cost: number
+  ) {
     this._value = 0;
   }
 

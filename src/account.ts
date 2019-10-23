@@ -35,7 +35,10 @@ export class Account implements InvestmentAccount {
   }
 
   get value(): number {
-    return this._positions.reduce((value, position) => value + position.value, 0);
+    return this._positions.reduce(
+      (value, position) => value + position.value,
+      0
+    );
   }
 
   /**

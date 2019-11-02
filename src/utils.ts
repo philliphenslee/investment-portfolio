@@ -12,11 +12,12 @@ function avgPrice(cost: number, shares: number): number {
   return cost / shares;
 }
 function portfolioWeight(totalValue: number, value: number): number {
-  return totalValue / value;
+  return (value / totalValue) * 100;
 }
 function gainPercentage(cost: number, value: number): number {
-  return (value - cost) / cost;
+  return ((value - cost) / cost) * 100;
 }
 function gain(cost: number, value: number): number {
   return value - cost;
 }
+export { equityValue, avgPrice, portfolioWeight, gainPercentage, gain };

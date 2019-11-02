@@ -34,4 +34,8 @@ export class Security implements InvestmentSecurity {
   update(values: []) {
     // TODO Updates values from array or JSON
   }
+
+  updatePrice(price: number) {
+    this.latestPrice = price;
+  }
 }

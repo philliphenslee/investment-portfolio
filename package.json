@@ -43,7 +43,7 @@
   "scripts": {
     "lint": "eslint src/* --ext .js,.ts --fix --color",
     "lint:fix": "prettier-eslint  src/* --write",
-    "test": "jest --coverage --passWithNoTests",
+    "test": "jest --coverage",
     "build": "rollup --config"
   },
   "husky": {

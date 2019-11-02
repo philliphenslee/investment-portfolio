@@ -10,3 +10,4 @@ export { Portfolio } from './portfolio';
 export { Position } from './position';
 export { Security } from './security';
 export * from './types';
+export * from './utils';

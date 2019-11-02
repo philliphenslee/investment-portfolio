@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import { InvestmentSecurity } from './types';
+import { InvestmentSecurity, Quote } from './types';
 
 /**
  * @class Security
@@ -31,11 +31,18 @@ export class Security implements InvestmentSecurity {
     this.previousClose = 0;
   }
 
-  update(values: []) {
-    // TODO Updates values from array or JSON
-  }
-
   updatePrice(price: number) {
     this.latestPrice = price;
+  }
+
+  update(quote: Quote): InvestmentSecurity {
+    this.changeDay = quote.change;
+    this.changeDayPercent = quote.changePercent;
+    this.latestPrice = quote.latestPrice;
+    this.priceHigh = quote.high;
+    this.priceLow = quote.low;
+    this.previousClose = quote.previousClose;
+    this.name = quote.companyName;
+    return this;
   }
 }

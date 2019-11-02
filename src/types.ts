@@ -35,7 +35,7 @@ export interface InvestmentSecurity {
   priceHigh: number;
   priceLow: number;
 }
-export interface quote {
+export interface Quote {
   symbol: string;
   companyName: string;
   calculationPrice: string;

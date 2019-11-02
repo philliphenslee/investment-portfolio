@@ -120,4 +120,10 @@ describe('Investment Portfolio Test Suite', () => {
       .toEqual(75.37 * position.shares)
       .toBeNumber();
   });
+
+  test('Return the total number of shares for a given security', () => {
+    expect(portfolio.totalShares('YOLO'))
+      .toEqual(56)
+      .toBeNumber();
+  });
 });

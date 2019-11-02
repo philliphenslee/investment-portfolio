@@ -90,4 +90,16 @@ export class Portfolio implements InvestmentPortfolio {
   get value(): number {
     return this.accounts.reduce((acc, account) => acc + account.value, 0);
   }
+
+  totalShares(symbol: string): number {
+    let totalShares = 0;
+    this.accounts.forEach(account => {
+      account.positions.forEach(position => {
+        if (position.symbol === symbol) {
+          totalShares += position.shares;
+        }
+      });
+    });
+    return totalShares;
+  }
 }

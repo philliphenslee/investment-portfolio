@@ -20,4 +20,14 @@ function gainPercentage(cost: number, value: number): number {
 function gain(cost: number, value: number): number {
   return value - cost;
 }
-export { equityValue, avgPrice, portfolioWeight, gainPercentage, gain };
+function formatValue(price: number): string {
+  return `${parseFloat(price.toString()).toFixed(2)}`;
+}
+export {
+  equityValue,
+  avgPrice,
+  portfolioWeight,
+  gainPercentage,
+  gain,
+  formatValue,
+};

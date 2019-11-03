@@ -21,7 +21,7 @@ export class Portfolio implements InvestmentPortfolio {
 
   private _value: number;
 
-  cost: number;
+  private _cost: number;
 
   /**
    *
@@ -48,7 +48,7 @@ export class Portfolio implements InvestmentPortfolio {
   }
 
   get gain(): number {
-    return this.value - this.cost;
+    return this.value - this._cost;
   }
 
   getSymbols(): string[] {
@@ -78,9 +78,14 @@ export class Portfolio implements InvestmentPortfolio {
 
     // Add the portfolio's securities
     const uniqueSecurities = [...new Set(allSymbols)];
+    uniqueSecurities.sort();
     uniqueSecurities.forEach(security => {
       this._securities.push(new Security(security, security));
     });
+  }
+
+  get cost(): number {
+    return this.accounts.reduce((acc, account) => acc + account.totalCost, 0);
   }
 
   get securities(): Security[] {

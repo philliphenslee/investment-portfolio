@@ -122,8 +122,14 @@ describe('Investment Portfolio Test Suite', () => {
   });
 
   test('Return the total number of shares for a given security', () => {
-    expect(portfolio.totalShares('YOLO'))
+    expect(portfolio.totalPositionShares('YOLO'))
       .toEqual(56)
+      .toBeNumber();
+  });
+
+  test('Return the total number of shares for a given security', () => {
+    expect(portfolio.totalPositionCost('VTI'))
+      .toEqual(54911.64)
       .toBeNumber();
   });
 });

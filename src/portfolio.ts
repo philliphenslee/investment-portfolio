@@ -91,7 +91,7 @@ export class Portfolio implements InvestmentPortfolio {
     return this.accounts.reduce((acc, account) => acc + account.value, 0);
   }
 
-  totalShares(symbol: string): number {
+  totalPositionShares(symbol: string): number {
     let totalShares = 0;
     this.accounts.forEach(account => {
       account.positions.forEach(position => {
@@ -101,5 +101,17 @@ export class Portfolio implements InvestmentPortfolio {
       });
     });
     return totalShares;
+  }
+
+  totalPositionCost(symbol: string): number {
+    let totalCost = 0;
+    this.accounts.forEach(account => {
+      account.positions.forEach(position => {
+        if (position.symbol === symbol) {
+          totalCost += position.cost;
+        }
+      });
+    });
+    return totalCost;
   }
 }

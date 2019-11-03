@@ -26,6 +26,6 @@ describe('Investment Utilities', () => {
     expect(utils.gain(25000, 30000)).toEqual(5000);
   });
   test('Returns formatted value', () => {
-    expect(utils.formatValue(233123.9837986854)).toEqual('233123.98');
+    expect(utils.formatValue(233123.9837986854)).toEqual('233,123.98');
   });
 });

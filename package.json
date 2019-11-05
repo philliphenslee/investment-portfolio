@@ -47,6 +47,7 @@
   "scripts": {
     "lint": "eslint src/* --ext .js,.ts --fix --color",
     "lint:fix": "prettier-eslint  src/* --write",
+    "ts:cjs": "yarn tsc -p tsconfig/tsconfig.cjs.json",
     "test": "jest --coverage",
     "build": "rollup --config"
   },

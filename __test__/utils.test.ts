@@ -5,7 +5,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 import * as utils from '../src/utils';
-import { Portfolio } from '../src';
 
 describe('Investment Utilities', () => {
   test('Should return an equity value based on current price and total shares', () => {

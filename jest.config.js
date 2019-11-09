@@ -7,4 +7,4 @@ module.exports = {
   testPathIgnorePatterns: ['/node_modules/'],
   verbose: true,
   setupFilesAfterEnv: ['jest-extended', 'jest-chain'],
-}
+};

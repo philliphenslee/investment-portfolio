@@ -1,4 +1,5 @@
-import cleanup from 'rollup-plugin-cleanup'
+import cleanup from 'rollup-plugin-cleanup';
+
 export default {
   input: 'dist/index',
   output: {
@@ -15,4 +16,4 @@ export default {
       ' */',
   },
   plugins: [cleanup()],
-}
+};

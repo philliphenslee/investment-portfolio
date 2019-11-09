@@ -10,6 +10,7 @@ describe('Investment Utilities', () => {
   test('Should return an equity value based on current price and total shares', () => {
     expect(utils.equityValue(100.1, 1000)).toEqual(100100);
   });
+
   test('Returns average cost per share', () => {
     expect(utils.avgPrice(98000, 1000)).toEqual(98);
   });
@@ -18,12 +19,15 @@ describe('Investment Utilities', () => {
       48.79816942931928
     );
   });
+
   test('Returns the gain as a percentage', () => {
     expect(utils.gainPercentage(25000, 30000)).toEqual(20);
   });
+
   test('Returns the gain amount', () => {
     expect(utils.gain(25000, 30000)).toEqual(5000);
   });
+
   test('Returns formatted value', () => {
     expect(utils.formatValue(233123.9837986854)).toEqual('233,123.98');
   });

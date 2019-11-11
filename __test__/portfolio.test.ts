@@ -127,7 +127,7 @@ describe('Investment Portfolio Test Suite', () => {
       .toBeNumber();
   });
 
-  test('Return the total number of shares for a given security', () => {
+  test('Return the cost of a position for security', () => {
     expect(portfolio.totalPositionCost('VTI'))
       .toEqual(54911.64)
       .toBeNumber();

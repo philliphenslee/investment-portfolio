@@ -14,6 +14,7 @@ describe('Investment Utilities', () => {
   test('Returns average cost per share', () => {
     expect(utils.avgPrice(98000, 1000)).toEqual(98);
   });
+
   test('Returns percent of total portfolio weight', () => {
     expect(utils.portfolioWeight(431000.02, 210320.12)).toEqual(
       48.79816942931928

@@ -92,6 +92,9 @@ export class Portfolio implements InvestmentPortfolio {
     return this._securities;
   }
 
+  /**
+   * Get the total  portfolio value.
+   */
   get value(): number {
     return this.accounts.reduce((acc, account) => acc + account.value, 0);
   }

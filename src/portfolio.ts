@@ -42,6 +42,10 @@ export class Portfolio implements InvestmentPortfolio {
     return this._accounts;
   }
 
+  /**
+   * Add investment account
+   * @param account
+   */
   addAccount(account: Account): Account {
     this._accounts.push(account);
     return account;

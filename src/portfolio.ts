@@ -51,6 +51,9 @@ export class Portfolio implements InvestmentPortfolio {
     return this.value - this._cost;
   }
 
+  /**
+   * Get portfolio symbols
+   */
   getSymbols(): string[] {
     return this.securities.map(security => security.symbol);
   }

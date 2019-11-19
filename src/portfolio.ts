@@ -51,6 +51,9 @@ export class Portfolio implements InvestmentPortfolio {
     return account;
   }
 
+  /**
+   * THe portfolio gain
+   */
   get gain(): number {
     return this.value - this._cost;
   }

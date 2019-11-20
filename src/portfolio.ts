@@ -94,6 +94,9 @@ export class Portfolio implements InvestmentPortfolio {
     });
   }
 
+  /**
+   * Calculate the total portfolio cost.
+   */
   get cost(): number {
     return this.accounts.reduce((acc, account) => acc + account.totalCost, 0);
   }

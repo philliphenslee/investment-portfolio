@@ -101,6 +101,9 @@ export class Portfolio implements InvestmentPortfolio {
     return this.accounts.reduce((acc, account) => acc + account.totalCost, 0);
   }
 
+  /**
+   * Securities
+   */
   get securities(): Security[] {
     return this._securities;
   }

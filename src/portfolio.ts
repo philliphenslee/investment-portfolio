@@ -38,6 +38,9 @@ export class Portfolio implements InvestmentPortfolio {
     this._initialize(data);
   }
 
+  /**
+   * Get Accounts
+   */
   get accounts(): Account[] {
     return this._accounts;
   }

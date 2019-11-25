@@ -39,7 +39,7 @@ export class Portfolio implements InvestmentPortfolio {
   }
 
   /**
-   * Get Accounts
+   * Get accounts
    */
   get accounts(): Account[] {
     return this._accounts;

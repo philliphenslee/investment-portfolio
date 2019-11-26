@@ -26,6 +26,9 @@ export class Account implements InvestmentAccount {
     return this._positions;
   }
 
+  /**
+   * The total account cost
+   */
   get totalCost(): number {
     return this._positions.reduce((cost, position) => cost + position.cost, 0);
   }

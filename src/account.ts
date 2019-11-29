@@ -40,6 +40,9 @@ export class Account implements InvestmentAccount {
     return this.value - this.totalCost;
   }
 
+  /**
+   * The account value
+   */
   get value(): number {
     return this._positions.reduce(
       (value, position) => value + position.value,

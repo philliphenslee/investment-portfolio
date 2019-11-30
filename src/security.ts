@@ -35,6 +35,10 @@ export class Security implements InvestmentSecurity {
     this.latestPrice = price;
   }
 
+  /**
+   * Update security price data
+   * @param quote
+   */
   update(quote: Quote): InvestmentSecurity {
     this.changeDay = quote.change;
     this.changeDayPercent = quote.changePercent;
